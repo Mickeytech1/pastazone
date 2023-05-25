@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero{
+    width: 97%;
+    height: 100vh;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)), url(./spaghetti.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+   
+}
+.nav-logo img {
+    width: 135px;
+    align-items: center;
+}
+.thepastazone{
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 5%;
+    
+}
+.nav-link ul{
+  
+    display: flex;
+    
+}
+.nav-link ul li {
+    list-style: none;
+    display: flex;
+    padding: 8px 25px;
+
+}
+.nav-link ul a  {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative
+}
+.nav-link ul a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    transition: all .3s linear;
+  
+}
+.nav-link ul a:hover::after{
+    width: 80%;
+}
+.btn{
+    padding:10px 20px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    background: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-1{
+    border: 0;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.nav-link .btn{
+    float: right;
+}
+.banner-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: 100px 0 auto;
+}
+
+.banner-title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+.banner-title h1 span{
+    color: red;
+}
+.icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    row-gap: 20px;
+}
+.vertical-bar{
+    height: 50%;
+    width: 50px;
+    background-color:red;
+    top: 0;
+    fill: black;
+    left: 0;
+    text-align: center;
+}
+
+.ham-menu {
+    display: none;
+}
+
+.second-vertical-bar{
+    background-color: red;
+    display: flex;
+    height: 50%;
+    fill: #fff;
+    flex-direction: column;
+    align-items: center;
+ 
+    row-gap: 20px;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.icon-div2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    row-gap: 20px;
+}
+.logo{
+    border-radius: 50%;
+    fill: black;
+    padding: 10px;
+}
+
+.notification{
+    display: flex;
+    max-width: 400px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: black;
+    align-items: center;
+ 
+}
+.contents{
+    flex-basis: 50%;
+    padding: 10px;
+}
+.notification-img{
+    flex-basis: 50%;
+}
+.notification-img img{
+    width: 100%;
+}
+.contents a{
+    text-decoration: none;
+    color: red;
+    font-size: 13px;
+    margin: 0 16px;
+}
+.contents{
+    color: #fff;
+    text-align: left;
+    margin-top: 1px;
+
+}
+@media (max-width: 700px){
+    .ham-menu {
+        display: unset;
+    }
+
+    .banner-title{
+        margin: 80px 40px;
+    }
+    .banner-title h1{
+        font-size: 50px;
+    }
+    .nav-bar{
+          padding: 10px 30px; 
+    }
+    .fa{
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+    .nav-bar .fa{
+        display: flex;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
